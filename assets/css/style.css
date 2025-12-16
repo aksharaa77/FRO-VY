@@ -715,10 +715,11 @@ footer .logo { margin-bottom: 30px;}
   color: var(--rythm);
   font-size: var(--fs-6);
   margin-bottom: 20px;
+  display: none;
 }
 
 .social-list {
-  display: flex;
+  display: none;
   justify-content: flex-start;
   gap: 20px;
 }
@@ -727,6 +728,7 @@ footer .logo { margin-bottom: 30px;}
   color: var(--rythm);
   font-size: var(--fs-4);
   margin-bottom: 10px;
+  display: none;
 }
 
 .social-link:is(:hover, :focus) { color: var(--french-rose); }
