@@ -1117,11 +1117,11 @@ copyright a:is(:hover, :focus) { color: var(--french-rose); }
 
 /*--What we do*/
 
-.functionalities{
+.functionalities {
   text-align: center;
-  margin: 50px;
-
+  margin: 50px 0;
 }
+
 
 .functionalities .section-title{
   margin-bottom: 20px;
@@ -1140,23 +1140,22 @@ copyright a:is(:hover, :focus) { color: var(--french-rose); }
 
 .functionalities-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
-  padding: 20px;
-  
+  grid-template-columns: 1fr;
+  gap: 24px;
+  padding: 0 16px;
 }
 
+
 .functionalities-box {
-  background: rgba(0,0,0,0);
-  border-radius: 10px;
-  padding: 30px;
-  text-align: center;
-  font-size: 1.2rem;
   display: flex;
-  /*flex-direction: column;*/
-  justify-content: center;
-  
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  border-radius: 12px;
+  background: var(--white-2);
+  text-align: center;
 }
+
 
 .functionalities-box img{
   transition: transform 0.4s ease, opacity 0.4s ease;
@@ -1167,3 +1166,29 @@ copyright a:is(:hover, :focus) { color: var(--french-rose); }
   opacity:0.5;
   transform:scale(1.5);
 }
+
+@media (min-width: 768px) {
+  .functionalities-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (hover: hover) {
+  .functionalities-box img:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+}
+
+.hero-banner img {
+  max-height: 420px;
+  width: 100%;
+  object-fit: contain;
+}
+@media (max-width: 767px) {
+  .hero-banner.slider {
+    display: none;
+  }
+}
+
+
