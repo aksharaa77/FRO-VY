@@ -764,6 +764,10 @@ copyright a:is(:hover, :focus) { color: var(--french-rose); }
     position:relative;
     overfllow:hidden;
   }
+
+  functionalities-grid{
+    align-items:center;
+  }
 }
 
 @media (min-width: 450px) {
