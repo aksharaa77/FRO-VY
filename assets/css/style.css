@@ -755,6 +755,17 @@ copyright a:is(:hover, :focus) { color: var(--french-rose); }
  * responsive for larger than 450px 
  */
 
+@media (max-width:560px){
+  .hero{
+    padding-top:120px;
+  }
+
+  .hero{
+    position:relative;
+    overfllow:hidden;
+  }
+}
+
 @media (min-width: 450px) {
 
   :root {
